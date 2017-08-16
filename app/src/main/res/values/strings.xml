@@ -5,5 +5,8 @@
     <string name="primer_numero">Primer Número</string>
     <string name="segundo_numero">Segundo Numero</string>
     <string name="calcular">Calcular</string>
-    <string name="borrar">Borrar</string>  fbg
+    <string name="borrar">Borrar</string>
+    <string name="Mensaje_error_uno">Digite Numero uno</string>
+    <string name="Mensaje_error_dos">Digite NUmero dos</string>
+    fbg
 </resources>
