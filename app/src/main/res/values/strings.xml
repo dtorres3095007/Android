@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Operaciones</string>
+    <string name="titulo">TÍTULO</string>
+    <string name="resultado">Résultado</string>
+    <string name="primer_numero">Primer Número</string>
+    <string name="segundo_numero">Segundo Numero</string>
+    <string name="calcular">Calcular</string>
+    <string name="borrar">Borrar</string>
+</resources>
