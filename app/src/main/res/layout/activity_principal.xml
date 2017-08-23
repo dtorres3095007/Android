@@ -39,6 +39,19 @@
             android:inputType="number" />
 
         <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Operaciones"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/cbxoperaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -53,19 +66,27 @@
             android:layout_height="wrap_content"
             android:textSize="24sp" />
 
-        <Button
-            android:id="@+id/button"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="calcular"
-            android:text="@string/calcular" />
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="borrarr"
-            android:text="@string/borrar" />
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="borrarr"
+                android:text="@string/borrar" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="calcular"
+                android:text="@string/calcular" />
+        </LinearLayout>
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

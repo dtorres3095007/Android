@@ -6,7 +6,13 @@
     <string name="primer_numero">Firts Number</string>
     <string name="resultado">Result</string>
     <string name="segundo_numero">Second Number</string>
-    <string name="titulo">Title</string>
+    <string name="titulo">Operations</string>
     <string name="Mensaje_error_uno">Type Number one</string>
     <string name="Mensaje_error_dos">Type Number two</string>
+    <string name="suma">sum</string>
+    <string name="resta">subtraction</string>
+    <string name="multiplicacion">multiplication</string>
+    <string name="division">division</string>
+    <string name="Operaciones">Operations</string>
+
 </resources>
