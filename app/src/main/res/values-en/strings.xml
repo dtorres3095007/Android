@@ -14,5 +14,6 @@
     <string name="multiplicacion">multiplication</string>
     <string name="division">division</string>
     <string name="Operaciones">Operations</string>
+    <string name="Mensaje_error_tres">You can not divide between 0</string>
 
 </resources>

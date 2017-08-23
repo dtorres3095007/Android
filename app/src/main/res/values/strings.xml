@@ -20,4 +20,5 @@
         <item>@string/division</item>
 
     </string-array>
+    <string name="Mensaje_error_tres">No puede divir entre 0</string>
 </resources>

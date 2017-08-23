@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Principal extends AppCompatActivity {
  private TextView res;
@@ -33,6 +34,7 @@ public class Principal extends AppCompatActivity {
 
     }
        public boolean Validar(){
+           int pos =operaciones.getSelectedItemPosition();
            if (n1.getText().toString().isEmpty()){
                n1.setError(resources.getString(R.string.Mensaje_error_uno));
                return false;
@@ -40,18 +42,42 @@ public class Principal extends AppCompatActivity {
                n2.setError(resources.getString(R.string.Mensaje_error_dos));
                return false;
            }
+
+           if(Integer.parseInt(n2.getText().toString())==0 && pos==3){
+
+               Toast.makeText(this,resources.getString(R.string.Mensaje_error_tres),Toast.LENGTH_SHORT).show();
+               return false;
+           }
            return true;
 
      }
-    public void calcular(View v){
-        int num1,num2,resl;
+        public void calcular(View v){
+        double num1,num2,resl=0;
+        int opcion;
 
-
+            res.setText("");
            if(Validar()) {
-               num1 =Integer.parseInt(n1.getText().toString());
-               num2 =Integer.parseInt(n2.getText().toString());
-    resl = num1 + num2;
-    res.setText(resl + "");
+               opcion = operaciones.getSelectedItemPosition();
+               num1 =Double.parseDouble(n1.getText().toString());
+               num2 =Double.parseDouble(n2.getText().toString());
+
+               switch (opcion){
+                   case 0:
+                       resl=num1+num2;
+                       break;
+                   case 1:
+                       resl=num1-num2;
+                       break;
+                   case 2:
+                       resl=num1*num2;
+                       break;
+                   case 3:
+                       resl=num1/num2;
+                       break;
+               }
+
+
+               res.setText(resl + "");
           }
         }
  public void borrarr(View v){
@@ -59,6 +85,7 @@ public class Principal extends AppCompatActivity {
         n2.setText("");
         res.setText("");
         n1.requestFocus();
+     operaciones.setSelection(0);
     }
 
 
